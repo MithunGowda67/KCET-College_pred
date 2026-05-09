@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from utils.data_loader import load_data
-from utils.ui_components import load_css
+from utils.ui_components import load_css, render_footer
 
 st.set_page_config(page_title="College Explorer", page_icon="🏢", layout="wide")
 load_css()
@@ -48,3 +48,6 @@ else:
         use_container_width=True,
         hide_index=True
     )
+
+render_footer()
+

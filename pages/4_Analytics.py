@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from utils.data_loader import load_data
-from utils.ui_components import load_css
+from utils.ui_components import load_css, render_footer
 
 st.set_page_config(page_title="Analytics", page_icon="📊", layout="wide")
 load_css()
@@ -94,3 +94,6 @@ else:
         st.plotly_chart(fig4, use_container_width=True)
     else:
         st.info("Round 3 data is required for trend analysis.")
+
+render_footer()
+

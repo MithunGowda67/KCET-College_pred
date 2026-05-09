@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from utils.data_loader import load_data
 from utils.predictor import predict_colleges
-from utils.ui_components import load_css, create_insight_card, render_chance_badge
+from utils.ui_components import load_css, create_insight_card, render_chance_badge, render_footer
 import plotly.express as px
 
 # Setup Page
@@ -139,3 +139,5 @@ else:
         for insight in insights:
             st.markdown(f"- {insight}")
 
+# Render footer
+render_footer()

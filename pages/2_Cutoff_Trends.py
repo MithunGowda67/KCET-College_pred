@@ -1,6 +1,7 @@
 import streamlit as st
 from utils.data_loader import load_data
-from utils.ui_components import load_css
+from utils.data_loader import load_data
+from utils.ui_components import load_css, render_footer
 
 st.set_page_config(page_title="Cutoff Trends", page_icon="📈", layout="wide")
 load_css()
@@ -20,3 +21,6 @@ else:
         use_container_width=True,
         hide_index=True
     )
+
+render_footer()
+

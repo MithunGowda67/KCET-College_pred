@@ -27,3 +27,11 @@ def create_insight_card(title, value, subtitle=None):
             {f"<p style='margin:0; font-size: 0.9em; color: var(--text-secondary);'>{subtitle}</p>" if subtitle else ""}
         </div>
     """, unsafe_allow_html=True)
+
+def render_footer():
+    st.markdown("""
+        <div style="text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid var(--border-color); color: var(--text-secondary);">
+            <p>Built by <b>MITHUN GOWDA G R</b></p>
+            <p><a href="https://github.com/MithunGowda67" target="_blank" style="color: var(--primary-color); text-decoration: none;">🔗 GitHub: @MithunGowda67</a></p>
+        </div>
+    """, unsafe_allow_html=True)
